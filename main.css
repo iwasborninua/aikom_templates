@@ -87,21 +87,21 @@ header .navbar-brand {
     padding: 30px 0;
 }
 
-/*.chartjs-size-monitor,*/
-/*.chartjs-size-monitor-expand,*/
-/*.chartjs-size-monitor-shrink,*/
-/*.chartjs-render-monitor {*/
-/*    width: 280px !important;*/
-/*    height: 280px !important;*/
-/*}*/
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink,
+.chartjs-render-monitor {
+    width: 280px !important;
+    height: 280px !important;
+}
 
 #myChart {
 
 }
 
 canvas#myChart {
-    width: 280px;
-    height: 280px;
+    width: 280px !important;
+    height: 280px !important;
     /*margin-left: 30px;*/
     margin-bottom: 30px;
 }
@@ -111,8 +111,9 @@ canvas#myChart {
 }
 
 .actual_information .information_card {
-    width: 100%;
+    width: 240px;
     height: 125px !important;
     background: #ffffff;
-    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 25px;
 }
