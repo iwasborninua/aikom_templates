@@ -1,0 +1,88 @@
+/* Общие стили */
+
+body {
+    font-family: "Open Sans";
+    color: #0D3B62;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('fonts/ProbaPro-Regular.ttf') format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('fonts/IBMPlexSans-Regular.ttf') format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header's */
+
+header {
+    background-image: url("img/header_small.png");
+    background-size: cover;
+    height: 70px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-size: 18px;
+    color: #0D3B62;
+}
+
+header .navbar {
+    padding: 10px 0;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+header .navbar-brand {
+    padding: 0 50px 0 100px;
+}
+
+.title {
+    margin: 30px 0;
+    border-radius: 10px;
+    background: #FFD441;
+}
+
+.title div.short_title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 24px;
+    text-align: center;
+    padding: 30px 25px 30px 25px;
+}
+
+.title div.long_title {
+
+}
+
+/* Актуальная информация */
+
+.actual_information {
+    background: #FFD441;
+    border-radius: 10px;
+}
+
+.actual_information .caption {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #234161;
+    margin: 0;
+    padding: 30px 0;
+}
