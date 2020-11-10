@@ -74,6 +74,7 @@ header .navbar-brand {
 .actual_information {
     background: #FFD441;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .actual_information .caption {
@@ -116,4 +117,61 @@ canvas#myChart {
     background: #ffffff;
     border-radius: 10px;
     margin-bottom: 25px;
+}
+
+.marker-1, .marker-2, .marker-3, .marker-4 {
+    margin-right: 20px;
+}
+.marker-1 {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50%;
+    background: #CA00FD;
+    display: inline-block;
+}
+
+.actual_information .count {
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -0.8px;
+    color: #000000;
+}
+
+.card_header {
+    padding: 20px 20px 0 15px;
+}
+
+.body_card {
+    font-family: Proba Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-left: 62px;
+    padding-bottom: 15px;
+    color: #3F3D3D;
+}
+
+/* map section */
+
+section.map {
+    border-radius: 10px;
+    background: #FFD441;
+    padding: 0 100px 30px 100px;
+}
+
+
+section.map .caption {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 90.5%;
+    margin: 0;
+    padding: 30px 0;
+    color: #234161;
 }
