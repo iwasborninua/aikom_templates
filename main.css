@@ -218,5 +218,39 @@ footer .footer_card {
     height: 214px;
     width: 100%;
     z-index: 1;
-    background: black;
+    border-radius: 10px;
+    background: #2D7BE5;
+    background-image: url("img/footer_background.png");
+    background-size: cover;
+}
+
+footer .footer_card .footer_caption {
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 160%;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #FFE358;
+    width: 300px;
+    margin: 0 auto;
+
+    color: #FFFFFF !important;
+}
+
+footer .footer_card .contact {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    font-family: Proba Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    padding-left: 50px;
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
 }
