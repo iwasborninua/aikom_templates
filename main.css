@@ -276,13 +276,18 @@ section.map #map {
     margin-bottom: 10px;
 }
 
+.list-group {
+    margin: 0 !important;
+}
+
 .list-group-item {
     background: transparent;
     border: none;
+    margin: 0 !important;
 }
 
 .panel-group {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .panel {
@@ -297,8 +302,13 @@ section.map #map {
     border: none !important;
 }
 
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: none;
+    padding: 0 15px 0 15px;
+}
 
-    /* footer */
+
+/* footer */
 
 footer {
     margin-top: 30px;
