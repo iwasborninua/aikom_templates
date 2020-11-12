@@ -5,6 +5,14 @@ body {
     color: #0D3B62;
 }
 
+.background-blue {
+    background: #2D7BE5;
+}
+
+.background-yellow {
+    background: #FFE358;
+}
+
 @font-face {
     font-family: 'Open Sans';
     src: url('fonts/OpenSans-Regular.ttf') format('ttf'),
@@ -205,6 +213,10 @@ section.map #map {
     margin-top: 30px;
 }
 
+/* sidebar */
+
+
+
 /* footer */
 
 footer {
@@ -212,6 +224,10 @@ footer {
     height: 250px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,212,65,1) 50%);
+}
+
+footer .row {
+    margin: 0 !important;
 }
 
 footer .footer_card {
