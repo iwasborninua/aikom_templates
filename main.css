@@ -359,3 +359,11 @@ footer .footer_card .contact {
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
+
+footer .banner {
+    margin-top: 45px;
+}
+
+footer .banner_top {
+    margin-bottom: 20px;
+}
