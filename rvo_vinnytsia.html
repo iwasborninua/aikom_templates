@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ВО Бабчинецької СР</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <!-- chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="img/horizontal_logo.png" alt=""></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Головна</a></li>
+                                <li><a href="#">Законодавство</a></li>
+                                <li><a href="#">Підтримка ЗЗСО</a></li>
+                                <li><a href="#">Підтримка ЗДО</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Іванов І.І<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Редагувати профіль</a></li>
+                                        <li><a href="#">Вийти</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <section class="sidebar background-blue">
+                        <h1>Устрій</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-default circle-button">
+                                    <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="sidebar_scroll_up_button">
+                                    <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="col-md-12">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Спеціальні інтернати</li>
+                                    <li class="list-group-item">ВО Бабчинецької СР</li>
+                                    <li class="list-group-item">ВО Барської МР</li>
+                                    <li class="list-group-item">ВО Барської РДА</li>
+                                    <li class="list-group-item">ВО Бершадської РДА</li>
+                                    <li class="list-group-item">ДО Вінницької МР</li>
+                                    <li class="list-group-item">ВО Вінницької РДА</li>
+                                    <li class="list-group-item">ВО Вороновицької СР</li>
+                                    <li class="list-group-item">ВО Гайсинської РДА</li>
+                                    <li class="list-group-item">ВО Глуховецької СР</li>
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        ВО Гніванської МР
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">test 1</li>
+                                                        <li class="list-group-item">test 2</li>
+                                                        <li class="list-group-item">test 3</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <li class="list-group-item">ВО Дашівської СР</li>
+                                    <li class="list-group-item">ВО Джулинської СР</li>
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading2">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                                        ВО та СГР Війтівецької СР
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
+                                                <div class="panel-body">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">УО Жмеринської МР</li>
+                                                        <li class="list-group-item">ВO Жмеринської РДА</li>
+                                                        <li class="list-group-item">ВО Іванівської СР</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="list-group-item">УО Іллінецької МР</li>
+                                    <li class="list-group-item">ВО Іллінецької РДА</li>
+                                    <li class="list-group-item">ВО Калинівської МР</li>
+                                    <li class="list-group-item">ВОС Калинівської РДА</li>
+                                    <li class="list-group-item">ВО Ковалівської СР</li>
+                                    <li class="list-group-item">ВО Козятинської РДА</li>
+                                    <li class="list-group-item">УОС Козятинської МР</li>
+                                </ul>
+                                <div class="col-md-12">
+                                    <button class="sidebar_scroll_down_button">
+                                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-9">
+                    <section class="title">
+                        <div class="short_title">ВО Бабчинецької СР</div>
+                    </section>
+
+                    <section class="tabs">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active"><a data-toggle="tab" href="#tab1">Інформація</a></li>
+                            <li role="presentation"><a data-toggle="tab"  href="#tab2">Заклади освіти</a></li>
+                            <li role="presentation"><a data-toggle="tab"  href="#tab3">Кабінет працівника</a></li>
+                            <li role="presentation"><a data-toggle="tab"  href="#tab4">Налаштування</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="tab1" class="tab-pane fade in active">
+                                <table class="table" >
+                                    <tbody >
+                                        <tr>
+                                            <th class="col-md-5">
+                                                № у системі:
+                                            </th>
+                                            <td class="col-md-7">
+                                                5974
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Коротка назва:
+                                            </th>
+                                            <td class="col-md-7">
+                                                ВО Бабчинецької СР
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Повна назва:
+                                            </th>
+                                            <td class="col-md-7">
+                                                Відділ освіти,культури,молоді та спорту Бабчинецької сільської ради
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Поштова адреса:
+                                            </th>
+                                            <td class="col-md-7">
+                                                24132, Вінницька обл., Чернівецький район, село Бабчинці, вул. Незалежності 13
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                E-Mail:
+                                            </th>
+                                            <td class="col-md-7">
+                                                bab.osvita@ukr.net
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Телефон:
+                                            </th>
+                                            <td class="col-md-7">
+                                                +38 (057) 597-46-02
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Сайт:
+                                            </th>
+                                            <td class="col-md-7">
+                                                https://vn.isuo.org/authorities/view/id/5974
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Керівник:
+                                            </th>
+                                            <td class="col-md-7">
+                                                Гостинський Олександр Олексійович
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Уповноважена особа:
+                                            </th>
+                                            <td class="col-md-7">
+                                                Шпортко Наталія Семенівна
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Куратор району по ЗЗСО:
+                                            </th>
+                                            <td class="col-md-7">
+                                                Лужанський Микола Миколайович
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Відповідальні за конкурсний
+                                                відбір підручників:
+                                            </th>
+                                            <td class="col-md-7">
+                                                Микола Миколайович Олексійович
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Куратор району по ЗДО:
+                                            </th>
+                                            <td class="col-md-7">
+                                                Донгаш Галина Василівна
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Загальна кількість ЗЗСО:
+                                            </th>
+                                            <td class="col-md-7">
+                                                16
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                в тому числі
+                                                призупинені та на ремонті:
+                                            </th>
+                                            <td class="col-md-7">
+                                                1
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                Загальна кількість ЗДО:
+                                            </th>
+                                            <td class="col-md-7">
+                                                22
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="col-md-5">
+                                                в тому числі
+                                                призупинені та на ремонті:
+                                            </th>
+                                            <td class="col-md-7">
+                                                2
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tab2" class="tab-pane fade">
+                                <table class="table" >
+                                    <thead>
+                                        <tr>
+                                            <th class="col-md-1">№ у<br> системі:</th>
+                                            <th class="col-md-4">Повна<br> назва:</th>
+                                            <th class="col-md-2">Коротка<br> назва:</th>
+                                            <th class="col-md-2">Форма<br> власності</th>
+                                            <th class="col-md-3">Адреса</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-1">7574</td>
+                                            <td class="col-md-4">Комунальний заклад "Бабчинецька загальноосвітня школа І-ІІІ ступенів Бабчинецької сільської ради
+                                                Чернівецького району Вінницької
+                                                області" опорний заклад Бабчинецького освітнього округу</td>
+                                            <td class="col-md-2">Бабчинецька ЗОШ І-ІІІ ст.</td>
+                                            <td class="col-md-2">комунальна</td>
+                                            <td class="col-md-3">Україна, Вінницька область, Чернівецький район, Бабчинецька, с.Бабчинці, вул. Незалежності, 36</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">7574</td>
+                                            <td class="col-md-4">Комунальний заклад "Бабчинецька загальноосвітня школа І-ІІІ ступенів Бабчинецької сільської ради
+                                                Чернівецького району Вінницької
+                                                області" опорний заклад Бабчинецького освітнього округу</td>
+                                            <td class="col-md-2">Бабчинецька ЗОШ І-ІІІ ст.</td>
+                                            <td class="col-md-2">комунальна</td>
+                                            <td class="col-md-3">Україна, Вінницька область, Чернівецький район, Бабчинецька, с.Бабчинці, вул. Незалежності, 36</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">7574</td>
+                                            <td class="col-md-4">Комунальний заклад "Бабчинецька загальноосвітня школа І-ІІІ ступенів Бабчинецької сільської ради
+                                                Чернівецького району Вінницької
+                                                області" опорний заклад Бабчинецького освітнього округу</td>
+                                            <td class="col-md-2">Бабчинецька ЗОШ І-ІІІ ст.</td>
+                                            <td class="col-md-2">комунальна</td>
+                                            <td class="col-md-3">Україна, Вінницька область, Чернівецький район, Бабчинецька, с.Бабчинці, вул. Незалежності, 36</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">7574</td>
+                                            <td class="col-md-4">Комунальний заклад "Бабчинецька загальноосвітня школа І-ІІІ ступенів Бабчинецької сільської ради
+                                                Чернівецького району Вінницької
+                                                області" опорний заклад Бабчинецького освітнього округу</td>
+                                            <td class="col-md-2">Бабчинецька ЗОШ І-ІІІ ст.</td>
+                                            <td class="col-md-2">комунальна</td>
+                                            <td class="col-md-3">Україна, Вінницька область, Чернівецький район, Бабчинецька, с.Бабчинці, вул. Незалежності, 36</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="tab3" class="tab-pane fade">
+                                <h3>Кабинет работника</h3>
+                            </div>
+                            <div id="tab4" class="tab-pane fade">
+                                <h3>Настройки</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer_card">
+                    <div class="col-md-9">
+                        <div class="col-md-12">
+                            <h1 class="footer_caption">Контакти</h1>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="contact">
+                                вул. Володимира Винниченка, 5<br>
+                                м. Київ, Україна 04053
+                            </div>
+                            <div class="contact">
+                                +38 (044) 486 98 70<br>
+                                +38 (044) 486 98 42
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="banner">
+                            <div class="banner_top">
+                                <img src="img/banner_logo_top.png" alt="">
+                            </div>
+                            <div class="banner_bottom">
+                                <img src="img/banner_logo_bottom.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart');
+
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [1, 1, 1, 1],
+                    backgroundColor: [
+                        'rgba(202, 0, 253, 1)',
+                        'rgba(0, 129, 253, 1)',
+                        'rgba(142, 252, 140, 1)',
+                        'rgb(100%, 51%, 39%, 1)',
+                    ],
+                    borderColor: [
+                        'rgba(202, 0, 253, 1)',
+                        'rgba(0, 129, 253, 1)',
+                        'rgba(142, 252, 140, 1)',
+                        'rgb(100%, 51%, 39%, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+    </script>
+
+    <script>
+        var mapOptions = {
+            center: [48.385044, 31.486671],
+            zoom: 5
+        }
+
+        var map = new L.map('map', mapOptions);
+        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        map.addLayer(layer);
+    </script>
+
+</body>
+</html>

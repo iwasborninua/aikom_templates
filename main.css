@@ -43,6 +43,10 @@ header {
     margin-bottom: 30px;
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+}
+
 .navbar-default .navbar-nav > li > a{
     font-size: 18px;
     color: #0D3B62;
@@ -76,6 +80,35 @@ header .navbar-brand {
 
 .title div.long_title {
 
+}
+
+
+/* tabs */
+
+.tabs-row {
+    border-bottom: 1px solid #3F3D3D;
+    padding: 10px 0;
+}
+
+.tabs table {
+    margin-top: 50px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-bottom: 1px solid #F0F3F9;
+    border-top: none;
+}
+
+.tabs li a {
+    background: #FFE358;
+    border-radius: 0;
+    margin-right: 0px;
+    color: #0D3B62;
+}
+
+.tabs li a:hover {
+    background: #FFE358;
+    outline: none;
 }
 
 /* Актуальная информация */
@@ -130,13 +163,26 @@ canvas#myChart {
 
 .marker-1, .marker-2, .marker-3, .marker-4 {
     margin-right: 20px;
-}
-.marker-1 {
     width: 24px !important;
     height: 24px !important;
     border-radius: 50%;
     background: #CA00FD;
     display: inline-block;
+}
+.marker-1 {
+    background: rgba(202, 0, 253, 1);
+}
+
+.marker-2 {
+    background: rgba(0, 129, 253, 1);
+}
+
+.marker-3 {
+    background: rgba(142, 252, 140, 1);
+}
+
+.marker-4 {
+    background: rgba(255, 131, 100, 1);
 }
 
 .actual_information .count {
