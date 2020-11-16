@@ -39,7 +39,7 @@ body {
 header {
     background-image: url("img/header_small.png");
     background-size: cover;
-    height: 70px;
+    /*height: 70px;*/
     margin-bottom: 30px;
 }
 
@@ -62,6 +62,23 @@ header .navbar {
 
 header .navbar-brand {
     padding: 0 50px 0 100px;
+}
+
+header .vertical_logo {
+    padding: 25px 0px;
+    text-align: center;
+}
+
+header .header_caption {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 126%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #234161;
+    margin: 0 !important;
 }
 
 .title {
