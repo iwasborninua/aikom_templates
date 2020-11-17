@@ -44,46 +44,58 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-10"></div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Головна</a></li>
+                                        <li><a href="#">Законодавство</a></li>
+                                        <li><a href="#">Підтримка ЗЗСО</a></li>
+                                        <li><a href="#">Підтримка ЗДО</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="login-button">
+                                            <a href="#" data-toggle="modal" data-target="#myModal">Вхід до системи</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
                 </div>
             </div>
-
-<!--            <nav class="navbar navbar-default">-->
-<!--                <div class="container-fluid">-->
-<!--                    &lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
-<!--                    <div class="navbar-header">-->
-<!--                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
-<!--                            <span class="sr-only">Toggle navigation</span>-->
-<!--                            <span class="icon-bar"></span>-->
-<!--                            <span class="icon-bar"></span>-->
-<!--                            <span class="icon-bar"></span>-->
-<!--                        </button>-->
-<!--                        <a class="navbar-brand" href="#"><img src="img/horizontal_logo.png" alt=""></a>-->
-<!--                    </div>-->
-
-<!--                    &lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-<!--                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-<!--                        <ul class="nav navbar-nav">-->
-<!--                            <li><a href="#">Головна</a></li>-->
-<!--                            <li><a href="#">Законодавство</a></li>-->
-<!--                            <li><a href="#">Підтримка ЗЗСО</a></li>-->
-<!--                            <li><a href="#">Підтримка ЗДО</a></li>-->
-<!--                        </ul>-->
-<!--                        <ul class="nav navbar-nav navbar-right">-->
-<!--                            <li class="dropdown">-->
-<!--                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Іванов І.І<span class="caret"></span></a>-->
-<!--                                <ul class="dropdown-menu">-->
-<!--                                    <li><a href="#">Редагувати профіль</a></li>-->
-<!--                                    <li><a href="#">Вийти</a></li>-->
-<!--                                </ul>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
-<!--                </div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
-<!--            </nav>-->
         </div>
     </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </header>
 
 <section class="content">
@@ -362,6 +374,8 @@
     var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
     map.addLayer(layer);
 </script>
+
+
 
 </body>
 </html>

@@ -79,6 +79,21 @@ header .header_caption {
     text-transform: uppercase;
     color: #234161;
     margin: 0 !important;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+header .login-button a {
+    font-family: Proba Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF !important;
+    background: #2D7BE5 !important;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .title {
