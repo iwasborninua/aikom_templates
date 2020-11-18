@@ -13,6 +13,10 @@ body {
     background: #FFE358;
 }
 
+.background-white {
+    background: #FFFFFF;
+}
+
 .margin-bottom-30 {
     margin-bottom: 30px !important;
 }
@@ -119,8 +123,38 @@ header .login-button a {
 }
 
 .title div.long_title {
-
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: -0.1px;
+    color: #234161;
+    padding: 5px 15px;
 }
+
+/* new section */
+
+.news {
+    background: #FFD441;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.news .news-caption {
+    text-align: center;
+    padding: 0px 0 10px 0;
+}
+
+.news .news-content {
+    background: #ffffff;
+    width: 95%;
+    border-radius: 15px;
+    margin: 0 auto 20px auto;
+    padding: 15px 15px 15px 15px;
+}
+
 
 /* tabs */
 
